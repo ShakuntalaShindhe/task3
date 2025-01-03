@@ -15,7 +15,7 @@ const ProductForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:1008/api/products", {
+      const response = await fetch("https://task3-1-8i90.onrender.com/api/products", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

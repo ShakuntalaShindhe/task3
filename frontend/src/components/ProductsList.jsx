@@ -12,7 +12,7 @@ const ProductList = () => {
 
   const fetchProducts = async (page) => {
     try {
-      const response = await fetch(`http://localhost:1008/api/products?page=${page}&pageSize=${pageSize}`);
+      const response = await fetch(`https://task3-1-8i90.onrender.com/api/products?page=${page}&pageSize=${pageSize}`);
       const data = await response.json();
 
       setProducts(data.data);
